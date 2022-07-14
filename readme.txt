@@ -2,9 +2,9 @@
 Contributors: scott.deluzio, ampmode
 Tags: WooCommerce, e-commerce, checkout
 Requires at least: 2.6
-Tested up to: 6.0
+Tested up to: 6.0.1
 Requires PHP: 5.6
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 
 Redirects WooCommerce customers to the check-out page instead of the cart page.
@@ -32,6 +32,9 @@ In the search field type “Direct to Checkout for WooCommerce,” then click �
 The manual installation method requires downloading the Direct to Checkout for WooCommerce plugin and uploading it to your webserver via your favorite FTP application. The WordPress codex contains [instructions on how to do this here](https://wordpress.org/support/article/managing-plugins/#manual-plugin-installation).
 
 == Changelog ==
+### 1.0.2 ###
+* Updated tested up to versions of WP and WooCommerce.
+
 ### 1.0.1 ###
 * Upgrade notice added
 
@@ -39,5 +42,5 @@ The manual installation method requires downloading the Direct to Checkout for W
 * Initial release
 
 == Upgrade Notice ==
-### 1.0.1 ###
-* Upgrade notice added
+### 1.0.2 ###
+* Updated tested up to versions of WP and WooCommerce.

@@ -4,10 +4,10 @@
 	Plugin URI: https://amplifyplugins.com
 	Description: Redirects WooCommerce customers to checkout instead of the cart page.
 	Requires at least: 3.3.0
-	Tested up to: 6.0
-	Version: 1.0.0
+	Tested up to: 6.0.1
+	Version: 1.0.2
 	WC requires at least: 3.0.0
-	WC tested up to: 6.5.1
+	WC tested up to: 6.7.0
 	Author: Amplify Plugins
 	Author URI: https://amplifyplugins.com
 	Text Domain: direct-to-checkout-for-woocommerce
