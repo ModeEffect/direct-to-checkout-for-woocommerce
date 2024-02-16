@@ -19,6 +19,7 @@ if ( ! class_exists( 'WC_Settings_Direct_To_Checkout' ) ) {
 			add_filter( 'woocommerce_settings_tabs_array', __CLASS__ . '::add_settings_tab', 50 );
 			add_action( 'woocommerce_settings_tabs_direct_to_checkout', __CLASS__ . '::settings_tab' );
 			add_action( 'woocommerce_update_options_direct_to_checkout', __CLASS__ . '::update_settings' );
+			add_action( 'before_woocommerce_init', __CLASS__ . '::declare_hpos_compability' );
 		}
 
 
@@ -103,6 +104,12 @@ if ( ! class_exists( 'WC_Settings_Direct_To_Checkout' ) ) {
 			);
 
 			return apply_filters( 'wc_settings_tab_direct_to_checkout_settings', $settings );
+		}
+
+		public static function declare_hpos_compability() {
+			if ( class_exists( \Automattic\WooCommerce\Utilities\FeaturesUtil::class ) ) {
+				\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, false );
+			}
 		}
 	}
 }
