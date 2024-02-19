@@ -108,7 +108,7 @@ if ( ! class_exists( 'WC_Settings_Direct_To_Checkout' ) ) {
 
 		public static function declare_hpos_compability() {
 			if ( class_exists( \Automattic\WooCommerce\Utilities\FeaturesUtil::class ) ) {
-				\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, false );
+				\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', DTC_PLUGIN, true );
 			}
 		}
 	}
